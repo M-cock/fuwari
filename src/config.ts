@@ -7,32 +7,32 @@ import type {
 import { LinkPreset } from './types/config'
 
 export const siteConfig: SiteConfig = {
-  title: 'Fuwari',
-  subtitle: 'Demo Site',
-  lang: 'en',         // 'en', 'zh_CN', 'zh_TW', 'ja', 'ko', 'es', 'th'
+  title: '马小酷の笔记',
+  subtitle: '探索、实践、分享每一步成长的足迹！',
+  lang: 'zh_CN',         // 'en', 'zh_CN', 'zh_TW', 'ja', 'ko', 'es', 'th' （语言设置）
   themeColor: {
-    hue: 250,         // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
-    fixed: false,     // Hide the theme color picker for visitors
+    hue: 250,         // 主题色的默认色调，从 0 到 360。例如：红色是 0，蓝绿色是 200，青色是 250，粉色是 345
+    fixed: false,     // 隐藏主题颜色选择器供访客使用
   },
   banner: {
-    enable: false,
-    src: 'assets/images/demo-banner.png',   // Relative to the /src directory. Relative to the /public directory if it starts with '/'
-    position: 'center',      // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
+    enable: true,
+    src: 'assets/images/demo-banner.png',   // 相对于 /src 目录的路径。如果以 '/' 开头，则相对于 /public 目录
+    position: 'center',      // 等同于 object-position，只支持 'top'、'center'、'bottom'，默认为 'center'
     credit: {
-      enable: false,         // Display the credit text of the banner image
-      text: '',              // Credit text to be displayed
-      url: ''                // (Optional) URL link to the original artwork or artist's page
+      enable: false,         // 是否显示横幅图像的版权信息
+      text: '',              // 显示的版权文本
+      url: ''                // （可选）原作品或艺术家的页面 URL 链接
     }
   },
   toc: {
-    enable: true,           // Display the table of contents on the right side of the post
-    depth: 2                // Maximum heading depth to show in the table, from 1 to 3
+    enable: true,           // 是否在文章右侧显示目录
+    depth: 2                // 显示目录的最大标题深度，范围从 1 到 3
   },
-  favicon: [    // Leave this array empty to use the default favicon
+  favicon: [    // 如果此数组为空，将使用默认的 favicon
     // {
-    //   src: '/favicon/icon.png',    // Path of the favicon, relative to the /public directory
-    //   theme: 'light',              // (Optional) Either 'light' or 'dark', set only if you have different favicons for light and dark mode
-    //   sizes: '32x32',              // (Optional) Size of the favicon, set only if you have favicons of different sizes
+    //   src: '/favicon/icon.png',    // favicon 的路径，相对于 /public 目录
+    //   theme: 'light',              // （可选）可设置为 'light' 或 'dark'，仅在你为浅色和深色模式设置不同 favicon 时使用
+    //   sizes: '32x32',              // （可选）favicon 的大小，仅在有不同尺寸的 favicon 时使用
     // }
   ]
 }
@@ -43,22 +43,22 @@ export const navBarConfig: NavBarConfig = {
     LinkPreset.Archive,
     LinkPreset.About,
     {
-      name: 'GitHub',
-      url: 'https://github.com/saicaca/fuwari',     // Internal links should not include the base path, as it is automatically added
-      external: true,                               // Show an external link icon and will open in a new tab
+      name: '网盘',
+      url: 'https://cloud.maxiaoku.com',     // 内部链接不应包含基础路径，因为它会自动添加
+      external: true,                               // 显示外部链接图标，并将在新标签页中打开
     },
   ],
 }
 
 export const profileConfig: ProfileConfig = {
-  avatar: 'assets/images/demo-avatar.png',  // Relative to the /src directory. Relative to the /public directory if it starts with '/'
-  name: 'Lorem Ipsum',
-  bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+  avatar: 'assets/images/demo-avatar.png',  // 相对于 /src 目录的路径。如果以 '/' 开头，则相对于 /public 目录
+  name: '马小酷',
+  bio: '探索、实践、分享每一步成长的足迹！',
   links: [
     {
       name: 'Twitter',
-      icon: 'fa6-brands:twitter',       // Visit https://icones.js.org/ for icon codes
-                                        // You will need to install the corresponding icon set if it's not already included
+      icon: 'fa6-brands:twitter',       // 访问 https://icones.js.org/ 获取图标代码
+                                        // 如果尚未包含相应的图标集，你需要安装对应的图标集
                                         // `pnpm add @iconify-json/<icon-set-name>`
       url: 'https://twitter.com',
     },
